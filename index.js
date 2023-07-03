@@ -2,7 +2,17 @@
  Scrivi una funzione chiamata "crazySum" che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma di quei due valori, ma se il loro valore è lo stesso allora deve ritornare la loro somma moltiplicata per 3.
 */
-
+function crazySum(numero1, numero2) {
+    if (numero1 === numero2) {
+      return (numero1 + numero2) * 3;
+    } else {
+      return numero1 + numero2;
+    }
+  }
+  
+  console.log(crazySum(4, 4));   // Output: 24 (somma di 4 e 4 moltiplicata per 3)
+  
+  
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 2
