@@ -52,12 +52,16 @@ console.log(reverseString("DOMENICO"));
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 function upperFirst(stringa) {
-  return stringa.charAt(0).toUpperCase() + stringa.slice(1); //charAt(0):restituisce il carattere nella posizione 0 della stringa, che rappresenta la prima lettera
+  const parole = stringa.split(" ");
+
+  for (let i = 0; i < parole.length; i++) {
+    parole[i] = parole[i].charAt(0).toUpperCase() + parole[i].slice(1);
+  }
+
+  return parole.join(" ");
 }
-                                                              //toUpperCase() converte  in maiuscolo.
-console.log(upperFirst("domenico"));                          //stringa.slice(1):restituisce una sottostringa della stringa originale, che inizia dalla posizione 1 fino alla fine.
 
-
+console.log(upperFirst("domenico zungri")); 
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
@@ -109,7 +113,7 @@ console.log(crazyDiff(50));
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
-//
+
 // differenza tra metodo includes e startsWith visto nella soluzione? 
 
 function codify(stringa) {
@@ -157,4 +161,18 @@ console.log(cutString("domenico"));
 //FINE
 
 
+
+
+ //esercizio 4 diversa soluzione ?
+function upperFirst(stringa) {
+  const parole = stringa.split(" ");
+
+  for (let i = 0; i < parole.length; i++) {
+    parole[i] = parole[i].charAt(0).toUpperCase() + parole[i].slice(1);
+  }
+
+  return parole.join(" ");
+}
+
+console.log(upperFirst("domenico zungri")); 
 
