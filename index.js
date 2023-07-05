@@ -52,7 +52,7 @@ console.log(reverseString("DOMENICO"));
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 function upperFirst(stringa) {
-  return stringa.charAt(0).toUpperCase() + stringa.slice(1); //harAt(0): Questa parte del codice restituisce il carattere nella posizione 0 della stringa, che rappresenta la prima lettera
+  return stringa.charAt(0).toUpperCase() + stringa.slice(1); //charAt(0):restituisce il carattere nella posizione 0 della stringa, che rappresenta la prima lettera
 }
                                                               //toUpperCase() converte  in maiuscolo.
 console.log(upperFirst("domenico"));                          //stringa.slice(1):restituisce una sottostringa della stringa originale, che inizia dalla posizione 1 fino alla fine.
