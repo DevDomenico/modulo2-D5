@@ -163,16 +163,4 @@ console.log(cutString("domenico"));
 
 
 
- //esercizio 4 diversa soluzione ?
-function upperFirst(stringa) {
-  const parole = stringa.split(" ");
-
-  for (let i = 0; i < parole.length; i++) {
-    parole[i] = parole[i].charAt(0).toUpperCase() + parole[i].slice(1);
-  }
-
-  return parole.join(" ");
-}
-
-console.log(upperFirst("domenico zungri")); 
 
