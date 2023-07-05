@@ -55,7 +55,7 @@ function upperFirst(stringa) {
   return stringa.charAt(0).toUpperCase() + stringa.slice(1); //harAt(0): Questa parte del codice restituisce il carattere nella posizione 0 della stringa, che rappresenta la prima lettera
 }
                                                               //toUpperCase() converte  in maiuscolo.
-console.log(upperFirst("domenico"));                          //stringa.slice(1): restituisce una sottostringa della stringa originale, che inizia dalla posizione 1 fino alla fine.
+console.log(upperFirst("domenico"));                          //stringa.slice(1):restituisce una sottostringa della stringa originale, che inizia dalla posizione 1 fino alla fine.
 
 
 
@@ -110,15 +110,19 @@ console.log(crazyDiff(50));
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 //
+// differenza tra metodo includes e startsWith visto nella soluzione? 
+
 function codify(stringa) {
-  if (stringa.includes('code')) {
-    return stringa;
-  } else {
-    return 'code' + stringa;
+  if (stringa.includes('code')) {    //utilizzando il metodo includes(). Se la stringa contiene "code", la condizione viene valutata come vera.
+    return stringa; //se la condizione if è vera,la funzione restituisce la stessa stringa senza apportare modifiche utilizzando return stringa.
+
+
+  } else {  //Se la condizione if è falsa
+    return 'code' + stringa; //viene creata una nuova stringa concatenando la parola "code" con la stringa originale utilizzando l'operatore di concatenazione +
   }
 }
 
-console.log(codify("codedomenico")); // Output: "codedomenico"
+console.log(codify("domenico"));
 
 
 
@@ -151,8 +155,6 @@ console.log(cutString("domenico"));
 
 
 //FINE
-
-
 
 
 
